@@ -5,8 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 import 'styles/styles.scss';
 
+const basename = process.env.NODE_ENV === 'production' ? '/advesa' : '';
+
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <App/>
   </BrowserRouter>,
 document.getElementById('root'));
