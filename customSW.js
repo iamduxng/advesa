@@ -1,4 +1,4 @@
-importScripts("/advesa/precache-manifest.79d676e7a1bf6bf885f3a22f15ab4fcc.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/advesa/precache-manifest.eb06548cf329b9bfcffc7a86141276db.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* 
     Custom SW using Workbox 

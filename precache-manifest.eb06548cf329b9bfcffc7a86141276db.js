@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4817c311a7f7754f2940e812f58fe3e7",
+    "revision": "be2b974615b2010f629dfccd5a820352",
     "url": "/advesa/index.html"
   },
   {
-    "revision": "5d74ad426ecea36d295a",
+    "revision": "62280b59696ca62c2d4d",
     "url": "/advesa/static/css/main.e3d7ac97.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/advesa/static/js/2.b827762f.chunk.js"
   },
   {
-    "revision": "5d74ad426ecea36d295a",
-    "url": "/advesa/static/js/main.eefc04f3.chunk.js"
+    "revision": "62280b59696ca62c2d4d",
+    "url": "/advesa/static/js/main.684ccf44.chunk.js"
   },
   {
     "revision": "8f55d1b977db3110b078",
