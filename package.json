@@ -2,7 +2,7 @@
   "name": "advesa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://iamduxng.github.io/advesa/",
   "scripts": {
     "start": "flow && set HTTPS=true && react-app-rewired start",
     "build": "react-app-rewired build",
