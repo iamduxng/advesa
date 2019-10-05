@@ -1,0 +1,51 @@
+//Flexbox Context
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+//Controlling Column Widths
+@mixin flex($val) {
+  -webkit-box-flex: $val;
+  -moz-box-flex:  $val;
+  -webkit-flex:  $val;
+  -ms-flex:  $val;
+  flex:  $val;
+}
+
+//Column Re-Ordering
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin flexflow($direction,$wrap: nowrap) {
+  flex-flow: $direction $wrap;
+}
+
+@mixin align-justify($property,$alignVal,$justifyVal) {
+  align-#{$property}: $alignVal; //cross-axis
+  justify-content: $justifyVal; //main-axis
+}
+
+.flex-center {
+  @include align-justify(items,center,center);
+}
+
+.flex-center-start {
+  @include align-justify(items,center,flex-start);
+}
+
+.flex-start-center {
+  @include align-justify(items,flex-start,center);
+}
+
+.flex_item {
+  @include flex(1);
+}

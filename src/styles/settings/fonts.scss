@@ -1,0 +1,68 @@
+$font-bold: 700;
+$font-light: 300;
+$font-normal: 400;
+
+//https://www.ninjaunits.com/converters/pixels/pixels-rem/
+$font-size-16: 1rem; //16px;
+$font-size-14: 0.875rem;
+$font-size-12: 0.75rem;
+
+.text-2row-truncate-v1 {
+    display:-webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.text-row-truncate-v1 {
+    @extend .text-2row-truncate-v1;
+    -webkit-line-clamp: 1;
+}
+
+.text-3row-truncate-v1 {
+    @extend .text-2row-truncate-v1;
+    -webkit-line-clamp: 3;
+}
+
+.text-2row-truncate-v2 {
+    /* hide text if it more than N lines  */
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative; 
+    /* use this value to count block height */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 2.4em; 
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: justify;  
+    /* place for '...' */
+    margin-right: -1em;
+    padding-right: 1em;
+
+    &:before {
+        /* points in the end */
+        content: '...';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of block */
+        right: 0;
+        bottom: 0;
+    }
+
+    &:after {
+        /* points in the end */
+        content: '';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of text */
+        right: 0;
+        /* set width and height */
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        /* bg color = bg color under block */
+        background: white;
+    }
+}

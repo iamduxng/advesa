@@ -1,0 +1,38 @@
+// COLORS
+$bg-yellow: #FFD962;
+$white: #fff;
+$black: #000;
+$danger: #f44336;
+$red: red;
+$orange: #FF6804;
+$grey-text: rgb(170,170,170);
+$grey-border: #dadce0;
+$google-blue: #4885ed;
+$btn-info-blue: #17a2b8;
+$btn-info-blue-hover: #138496;
+
+@mixin bg-opacity($color, $opacity: 1) {
+  background-color: rgba($color: $color, $alpha: $opacity);
+}
+
+.d-text-danger {
+  color: $danger;
+}
+
+.d-icon {
+  &-red {
+    color: $red;
+  }
+  &-orange {
+    color: $orange;
+  }
+  &-blue {
+    color: $google-blue;
+  }
+  &-grey {
+    color: $grey-text;
+  }
+  &-yellow {
+    color: $bg-yellow;
+  }
+}

@@ -1,0 +1,10 @@
+.link-wrapper {
+    display: block;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none !important;
+
+    &:hover {
+        color: inherit;
+    }
+}
