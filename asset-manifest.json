@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/advesa/static/css/main.e3d7ac97.chunk.css",
-    "main.js": "/advesa/static/js/main.684ccf44.chunk.js",
-    "main.js.map": "/advesa/static/js/main.684ccf44.chunk.js.map",
-    "runtime-main.js": "/advesa/static/js/runtime-main.e20d4072.js",
-    "runtime-main.js.map": "/advesa/static/js/runtime-main.e20d4072.js.map",
-    "static/js/2.b827762f.chunk.js": "/advesa/static/js/2.b827762f.chunk.js",
-    "static/js/2.b827762f.chunk.js.map": "/advesa/static/js/2.b827762f.chunk.js.map",
+    "static/js/0.3e655c03.chunk.js": "/advesa/static/js/0.3e655c03.chunk.js",
+    "static/js/0.3e655c03.chunk.js.map": "/advesa/static/js/0.3e655c03.chunk.js.map",
+    "main.css": "/advesa/static/css/main.8e3a9dd4.chunk.css",
+    "main.js": "/advesa/static/js/main.8b9b0dd2.chunk.js",
+    "main.js.map": "/advesa/static/js/main.8b9b0dd2.chunk.js.map",
+    "runtime-main.js": "/advesa/static/js/runtime-main.613cbf88.js",
+    "runtime-main.js.map": "/advesa/static/js/runtime-main.613cbf88.js.map",
+    "static/js/3.80210d8f.chunk.js": "/advesa/static/js/3.80210d8f.chunk.js",
+    "static/js/3.80210d8f.chunk.js.map": "/advesa/static/js/3.80210d8f.chunk.js.map",
+    "static/js/4.fe50bf27.chunk.js": "/advesa/static/js/4.fe50bf27.chunk.js",
+    "static/js/4.fe50bf27.chunk.js.map": "/advesa/static/js/4.fe50bf27.chunk.js.map",
+    "static/js/5.d839317a.chunk.js": "/advesa/static/js/5.d839317a.chunk.js",
+    "static/js/5.d839317a.chunk.js.map": "/advesa/static/js/5.d839317a.chunk.js.map",
+    "static/js/6.9e37c76b.chunk.js": "/advesa/static/js/6.9e37c76b.chunk.js",
+    "static/js/6.9e37c76b.chunk.js.map": "/advesa/static/js/6.9e37c76b.chunk.js.map",
+    "static/js/7.9d8803ac.chunk.js": "/advesa/static/js/7.9d8803ac.chunk.js",
+    "static/js/7.9d8803ac.chunk.js.map": "/advesa/static/js/7.9d8803ac.chunk.js.map",
     "customSW.js": "/advesa/customSW.js",
     "index.html": "/advesa/index.html",
-    "precache-manifest.eb06548cf329b9bfcffc7a86141276db.js": "/advesa/precache-manifest.eb06548cf329b9bfcffc7a86141276db.js",
-    "static/css/main.e3d7ac97.chunk.css.map": "/advesa/static/css/main.e3d7ac97.chunk.css.map"
+    "precache-manifest.4239127c02a4058452a5f2e9118ea8af.js": "/advesa/precache-manifest.4239127c02a4058452a5f2e9118ea8af.js",
+    "static/css/main.8e3a9dd4.chunk.css.map": "/advesa/static/css/main.8e3a9dd4.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e20d4072.js",
-    "static/js/2.b827762f.chunk.js",
-    "static/css/main.e3d7ac97.chunk.css",
-    "static/js/main.684ccf44.chunk.js"
+    "static/js/runtime-main.613cbf88.js",
+    "static/js/3.80210d8f.chunk.js",
+    "static/css/main.8e3a9dd4.chunk.css",
+    "static/js/main.8b9b0dd2.chunk.js"
   ]
 }

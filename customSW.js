@@ -1,4 +1,4 @@
-importScripts("/advesa/precache-manifest.eb06548cf329b9bfcffc7a86141276db.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/advesa/precache-manifest.4239127c02a4058452a5f2e9118ea8af.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* 
     Custom SW using Workbox 
@@ -13,7 +13,10 @@ const urlsCache = [
   './favicon.ico'
 ];
 
-const imgsCache = [];
+const imgsCache = [
+  './loading.svg',
+  './user.png'
+];
 
 //Pre-cache the static assets
 workbox.precaching.precacheAndRoute([
