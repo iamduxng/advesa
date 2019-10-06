@@ -24,7 +24,7 @@ npm run build
    1. Option to filter the posts using a keyword or filter the posts by the user’s name.
 1. Use [Material UI](https://material-ui.com/).
 1. Use Flex to solve the problem *all grid items should have same height*.
-![Solved problem](/problems.jpg)
+![Solved problem](/problems.JPG)
 1. Deploy a Github page for testing (enabled Service Worker): [Advesa Github page](https://iamduxng.github.io/advesa/).
 
 ## License
