@@ -1,8 +1,11 @@
 .post {
+  &-grid-item {
+    @include flexbox();
+  }
+
   background-color: $white;
   border-radius: $bd-r;
   padding: $pd-10;
-  min-height: 50px;
 
   @include flexbox();
   @include flexflow(column);
@@ -10,6 +13,7 @@
   &-user {
     @include flexbox();
     @include flexflow(row);
+    @include flex(1 0 auto);
 
     & > * {
       display: inline-block;

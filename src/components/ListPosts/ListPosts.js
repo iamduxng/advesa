@@ -20,7 +20,7 @@ const ListPosts = observer((props) => {
   },[]);
 
   useEffect(() => {
-    advesaApi.filterPosts(props.keyword);
+    advesaApi.keyword = props.keyword;
   },[props.keyword]);
 
   return <div className="list-posts">

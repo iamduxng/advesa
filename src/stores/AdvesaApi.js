@@ -6,33 +6,37 @@ import axios from "axios";
 configure({ enforeActions: "observed" })
 
 class AdvesaApi {
-  users = [];
-  posts = [];
-  filteredUsers = [];
-  filteredPosts = [];
   stateUser = MOBX_STATE.pending;
   statePost = MOBX_STATE.pending;
+  keyword = '';
+  
+  _users = [];
+  _posts = [];
 
   get fUsers() {
-    return this.users || this.filteredUsers;
-  } 
+    let fUsers = this._users.filter(user => user.name.includes(this.keyword));
+    return fUsers.length > 0 ? fUsers : this._users;
+  }
 
   get fPosts() {
-    return this.posts || this.filteredPosts;
+    let fPosts = this._posts.filter(post => post.title.includes(this.keyword) || post.body.includes(this.keyword));
+    return fPosts.length > 0 ? fPosts : this._posts;
   }
 
   getUsersAndPosts() {
-    this.users = [];
-    this.posts = [];
+    this._users = [];
+    this._posts = [];
     this._setStates(MOBX_STATE.pending);
+
     axios.all([
       axios.get(`${API_URL}/users`),
       axios.get(`${API_URL}/posts`)
     ]).then(
       ([users, posts]) => {
         runInAction(() => {
-          this.users = users.data || [];
-          this.posts = posts.data || [];
+          this._users = users.data || [];
+          this._posts = posts.data || [];
+          this.keyword = '';
           this._setStates(MOBX_STATE.done);
         })
       }
@@ -42,17 +46,7 @@ class AdvesaApi {
           this._setStates(MOBX_STATE.error);
         })
       }
-    )
-  }
-
-  filterPosts(keyword) {
-    this.filteredUsers = [];
-    this.filteredPosts = [];
-    this._setStates(MOBX_STATE.pending);
-
-    this.filteredUsers = this.users.filter(user => user.name.includes(keyword));
-
-    this._setStates(MOBX_STATE.done);
+    );
   }
 
   _setStates(state) {
@@ -62,13 +56,13 @@ class AdvesaApi {
 }
 
 decorate(AdvesaApi, {
-  users: observable,
-  posts: observable,
+  keyword: observable,
   stateUser: observable,
   statePost: observable,
   fUsers: computed,
   fPosts: computed,
-  getUsersAndPosts: action
+  getUsersAndPosts: action,
+  filterPosts: action
 });
 
 export default AdvesaApi

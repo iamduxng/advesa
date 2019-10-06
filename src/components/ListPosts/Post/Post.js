@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core';
 const Post = observer((props) => {
   let { user, post } = props;
 
-  return <Grid item xs={12} sm={12} md={6}>
+  return <Grid item xs={12} sm={12} md={6} className="post-grid-item">
     <div className="post">
       <div className="post-user flex-center-start">
         <div className="post-user__avatar">

@@ -1,8 +1,8 @@
 const API_URL = 'https://jsonplaceholder.typicode.com';
 const MOBX_STATE = {
-  done: Symbol('DONE'),
-  error: Symbol('ERROR'),
-  pending: Symbol('PENDING')
+  done: 'DONE',
+  error: 'ERROR',
+  pending: 'PENDING'
 }
       
 export {
