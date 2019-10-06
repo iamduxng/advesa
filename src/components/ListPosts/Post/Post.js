@@ -9,7 +9,7 @@ const Post = observer((props) => {
     <div className="post">
       <div className="post-user flex-center-start">
         <div className="post-user__avatar">
-          <img src='/user.png' alt='Img'/>
+          <img src='user.png' alt='Img'/>
         </div>
         <div className="post-user__info">
           <div className="">{user.name}</div>
