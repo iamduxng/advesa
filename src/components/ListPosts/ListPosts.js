@@ -20,7 +20,7 @@ const ListPosts = observer((props) => {
   },[]);
 
   useEffect(() => {
-    advesaApi.keyword = props.keyword;
+    advesaApi.keyword = props.keyword.toLowerCase();
   },[props.keyword]);
 
   return <div className="list-posts">

@@ -14,12 +14,12 @@ class AdvesaApi {
   _posts = [];
 
   get fUsers() {
-    let fUsers = this._users.filter(user => user.name.includes(this.keyword));
+    let fUsers = this._users.filter(user => user.name.toLowerCase().includes(this.keyword));
     return fUsers.length > 0 ? fUsers : this._users;
   }
 
   get fPosts() {
-    let fPosts = this._posts.filter(post => post.title.includes(this.keyword) || post.body.includes(this.keyword));
+    let fPosts = this._posts.filter(post => post.title.toLowerCase().includes(this.keyword) || post.body.toLowerCase().includes(this.keyword));
     return fPosts.length > 0 ? fPosts : this._posts;
   }
 
