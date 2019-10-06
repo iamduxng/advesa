@@ -11,7 +11,10 @@ const urlsCache = [
   './favicon.ico'
 ];
 
-const imgsCache = [];
+const imgsCache = [
+  './loading.svg',
+  './user.png'
+];
 
 //Pre-cache the static assets
 workbox.precaching.precacheAndRoute([

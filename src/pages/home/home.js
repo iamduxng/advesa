@@ -1,11 +1,24 @@
-import React from 'react';
-//import rootStore from 'stores';
+import React, { useRef, useState } from 'react';
+import rootStore from 'stores';
 import { Provider } from 'mobx-react';
+import { debounce } from 'utils/helpers';
 
-const HomePage = (props) => {
+import { ListPosts, SearchField } from 'components';
 
+const HomePage = () => {
+  const [keyword, setKeyword] = useState('');
+  const searchRef = useRef();
 
-  return <>Home Page</>
-}
+  const handleSubmit = debounce(() => {
+    setKeyword(searchRef.current.value);
+  },250);
+
+  return <Provider store={rootStore}>
+    <div className="home">
+      <SearchField ref={searchRef} handleSubmit={handleSubmit}/>
+      <ListPosts keyword={keyword}/>
+    </div>
+  </Provider>
+};
 
 export default HomePage;

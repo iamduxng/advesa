@@ -1,0 +1,9 @@
+.search-field {
+  &__input {
+    background-color: $white !important;
+  }
+
+  &__icon > button {
+    margin: 0 auto;
+  }
+}

@@ -1,6 +1,8 @@
+import AdvesaApi from './AdvesaApi';
 
 class RootStore {
   constructor() {
+    this.advesaApi = new AdvesaApi();
   }
 }
 

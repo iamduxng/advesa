@@ -1,0 +1,28 @@
+.post {
+  background-color: $white;
+  border-radius: $bd-r;
+  padding: $pd-10;
+  min-height: 50px;
+
+  @include flexbox();
+  @include flexflow(column);
+
+  &-user {
+    @include flexbox();
+    @include flexflow(row);
+
+    & > * {
+      display: inline-block;
+    }
+
+    &__avatar {
+      margin-right: 10px;
+      border-radius: 50%;
+      max-width: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
